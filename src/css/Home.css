@@ -3,7 +3,7 @@
   --bg-end: #f4f9fa;
 }
 
-.divInicio {
+.divInicioHome {
     display: flex;
     flex-direction: column;
     align-items: center;

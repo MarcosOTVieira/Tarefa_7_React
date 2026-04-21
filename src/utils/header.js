@@ -6,7 +6,6 @@ export default function Header() {
     const [open, setOpen] = useState(false);
     const location = useLocation();
 
-    // fecha o menu ao mudar de rota
     useEffect(() => {
         setOpen(false);
     }, [location.pathname]);
@@ -15,7 +14,7 @@ export default function Header() {
         <header className="app-header" role="banner">
             <nav className="nav" aria-label="Principal">
                 <div className="brand">
-                    <Link to="/">MeuSite</Link>
+                    <Link to="/">Tarefa 7 React</Link>
                 </div>
 
                 <button
@@ -30,13 +29,7 @@ export default function Header() {
                 <ul className={`nav-links ${open ? "open" : ""}`}>
                     <li><Link to="/">Início</Link></li>
                     <li><Link to="/sobre">Sobre</Link></li>
-                    <li><Link to="/contato">Contato</Link></li>
-                    <li className="mobile-cta"><Link className="cta" to="/login">Entrar</Link></li>
                 </ul>
-
-                <div className="nav-actions">
-                    <Link className="cta" to="/login">Entrar</Link>
-                </div>
             </nav>
         </header>
     );
