@@ -1,4 +1,3 @@
-import logo from '../logo.svg';
 import '../css/Sobre.css';
 
 function Sobre() {
